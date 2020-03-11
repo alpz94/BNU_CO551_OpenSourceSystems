@@ -1,3 +1,5 @@
+<!-- Author: Ana Lucia Petinga Zorro
+CO551 Open Source Systems -->
 <?php include("class_lib.php"); ?>
 <?php
 	$stefan = new person();
