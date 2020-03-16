@@ -2,7 +2,7 @@
 CO551 Open Source Systems -->
 <?php
 	$sql = "INSERT INTO test (name,email,phone_number) ";
-	$sql = $sql . " values ('$_POST[txtName]','$_POST[txtEmail]','$_POST[txtPhoneNumber]’)";
+	$sql = $sql . " values ('$_POST[txtName]','$_POST[txtEmail]','$_POST[txtPhoneNumber]')";
 
     $link = mysqli_connect("localhost", "root", "", "test");
 	
