@@ -10,9 +10,7 @@ CO551 Open Source Systems -->
     $sql = "SELECT * from test";
 
     $result = mysqli_query($link, $sql);
-
-    $row = mysqli_fetch_assoc($result);
-
+    
     while ($row = mysqli_fetch_assoc($result))
     {
         echo "$row[name] $row[email] $row[phone_number] <br/>";	
