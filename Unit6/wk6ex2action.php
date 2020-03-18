@@ -9,7 +9,8 @@ CO551 Open Source Systems -->
 ?>
 <html>
     <body>
-        <form action='wk6ex3.php?id=<?php echo $_GET['id']?>' method='post'>
+        <!-- <form action='wk6ex3.php?id=<?php echo $_GET['id']?>' method='post'> -->
+        <form action='wk6ex4.php?id=<?php echo $_GET['id']?>' method='post'>
             Name :
             <input type=text name=txtname value="<?php echo $row['name'] ?>" readonly />
             </br>
@@ -19,7 +20,8 @@ CO551 Open Source Systems -->
             Email :
             <input type=text name=txtemail value="<?php echo $row['email'] ?>" />
             </br>
-            <input type=submit name=btnsubmit value="save"/>
+            <!-- <input type=submit name=btnsubmit value="save"/> -->
+            <input type=delete name=delete value="delete"/>
         </form>
     </body>
 </html>

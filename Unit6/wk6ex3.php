@@ -1,7 +1,7 @@
 <!-- Author: Ana Lucia Petinga Zorro
 CO551 Open Source Systems -->
 <?php 
-    $sql = "UPDATE test SET email = $_POST[txtemail], phone_number = $_POST[txttelno] WHERE ID = $_GET[id]";
+    $sql = "UPDATE test SET email = $_POST[txtemail], phone_number = $_POST[txttelno] WHERE ID = '$_GET[id]'";
 
     $link = mysqli_connect("localhost", "root", "", "test");
 
