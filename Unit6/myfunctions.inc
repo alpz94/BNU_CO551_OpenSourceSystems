@@ -15,6 +15,12 @@
         echo "<h2> $text_h2 </h2>";
     }
 
+    function calculatetax($salary, $rate)
+    {
+        $tax = ($salary * ($rate/100));
+        return $tax;
+    }
+
     function html_footer()
     {
         echo "</body>";
