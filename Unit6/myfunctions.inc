@@ -10,6 +10,11 @@
         echo "<h1> $text </h1>";
     }
 
+    function html_h2($text_h2)
+    {
+        echo "<h2> $text_h2 </h2>";
+    }
+
     function html_footer()
     {
         echo "</body>";
