@@ -17,7 +17,7 @@
 
     function calculatetax($salary, $rate=40, $allowance=926)
     {
-        $tax = ($salary * ($rate/100) - $allowance);
+        $tax = (($salary * ($rate/100)) - $allowance);
         return $tax;
     }
 
