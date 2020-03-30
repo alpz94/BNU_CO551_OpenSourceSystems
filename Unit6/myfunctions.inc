@@ -15,7 +15,7 @@
         echo "<h2> $text_h2 </h2>";
     }
 
-    function calculatetax($salary, $rate)
+    function calculatetax($salary, $rate=40)
     {
         $tax = ($salary * ($rate/100));
         return $tax;
