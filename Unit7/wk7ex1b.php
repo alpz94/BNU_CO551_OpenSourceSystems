@@ -10,8 +10,8 @@ CO551 Open Source Systems -->
             $monster = $this->table('monster');
             $monster->addColumn('id', 'integer')
                 ->addColumn('Name', 'string', ['limit' => 20])
-                ->addColumn('Image', 'string')
-                ->addColumn('Audio', 'string')
+                ->addColumn('Image', 'binary')
+                ->addColumn('Audio', 'binary')
                 ->addIndex(['id'], ['unique' => true])
                 ->create();
         }
