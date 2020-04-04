@@ -12,7 +12,7 @@ CO551 Open Source Systems -->
     $audiodata = addslashes(fread(fopen($audio, "r"), filesize($audio)));
     
     $sql = "INSERT INTO monster";
-    $sql .= "(Name, Image, Audio) ";
+    $sql .= "(Name, Image, Audio)";
     $sql .= "VALUES ('$_POST[txtname]', '$imagedata','$audiodata');";
 
     $result = mysqli_query($sql, $db);
