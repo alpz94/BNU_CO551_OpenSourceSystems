@@ -10,5 +10,5 @@ CO551 Open Source Systems -->
 
     echo "<img src='getjpg.php?id=" . $row[id]. "'/>";
 
-    mysqli_close();
+    mysqli_close($conn);
 ?>
