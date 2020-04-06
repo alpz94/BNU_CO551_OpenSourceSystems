@@ -1,7 +1,7 @@
 <!-- Author: Ana Lucia Petinga Zorro
 CO551 Open Source Systems -->
 <?php
-    $db = mysqli_connect("localhost", "root", "", "db_week7");
+    $conn = mysqli_connect("localhost", "root", "", "db_week7");
 
     // Obtain the file sent to the server within the response.
     $image = $_FILES['monsterimage']['tmp_name']; 
@@ -15,7 +15,7 @@ CO551 Open Source Systems -->
     $sql .= "(Name, Image, Audio)";
     $sql .= "VALUES ('$_POST[txtname]', '$imagedata','$audiodata');";
 
-    $result = mysqli_query($db, $sql);
+    $result = mysqli_query($conn, $sql);
 
-    mysqli_close($db);
+    mysqli_close($conn);
 ?>

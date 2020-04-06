@@ -3,14 +3,14 @@ CO551 Open Source Systems -->
 <?php
   header("Content-type: image/jpeg");
 
-  $conn = mysqli_connect("localhost", "21903356", "mysqluser", "db5_21903356");
+  $conn = mysqli_connect("localhost", "root", "", "db_week7");
 
-  $sql = "SELECT image FROM monster WHERE id='" . $_GET[id] ."';";
+  $sql = "SELECT Image FROM monster WHERE id='" . $_GET[id] ."';";
 	
-  $result = mysqli_query($sql, $conn);
+  $result = mysqli_query($conn, $sql);
   $row = mysqli_fetch_array($result);
   
-  $jpg = $row["image"];
+  $jpg = $row["Image"];
 
   echo $jpg;
 ?>
