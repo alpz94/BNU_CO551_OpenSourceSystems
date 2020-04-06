@@ -15,7 +15,7 @@ CO551 Open Source Systems -->
     $sql .= "(Name, Image, Audio)";
     $sql .= "VALUES ('$_POST[txtname]', '$imagedata','$audiodata');";
 
-    $result = mysqli_query($sql, $db);
+    $result = mysqli_query($db, $sql);
 
-    mysqli_close();
+    mysqli_close($db);
 ?>
