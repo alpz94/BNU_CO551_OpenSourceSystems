@@ -1,7 +1,7 @@
 <!-- Author: Ana Lucia Petinga Zorro
 CO551 Open Source Systems -->
 <?php
-    $db = mysqli_connect("localhost", "21903356", "mysqluser", "db5_21903356");
+    $db = mysqli_connect("localhost", "root", "", "db_week7");
 
     // Obtain the file sent to the server within the response.
     $image = $_FILES['monsterimage']['tmp_name']; 
