@@ -8,7 +8,7 @@ CO551 Open Source Systems -->
   $sql = "SELECT Image FROM monster WHERE id='" . $_GET[id] ."';";
 	
   $result = mysqli_query($db, $sql);
-  $row = mysqli_fetch_array($result);
+  $row = mysqli_fetch_assoc($result);
   
   $jpg = $row["Image"];
 

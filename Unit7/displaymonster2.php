@@ -5,11 +5,11 @@ CO551 Open Source Systems -->
 <body>
 
 <?php
-    $conn = mysqli_connect("localhost", "21903356", "mysqluser", "db5_21903356");
+    $db = mysqli_connect("localhost", "root", "", "db_week7");
 
     $sql = "select id,name from monster;";
 
-    $result = mysqli_query($sql, $db);
+    $result = mysqli_query($db, $sql);
 
     echo "<table align='center' border='1'>";
     echo "<tr><th width='200' align='left'>ID</th><th width='200' align='left'>Name</th><th>Audio</th><th>Image</th></tr>";
@@ -26,5 +26,5 @@ CO551 Open Source Systems -->
 
     echo "</table>";
 
-    mysqli_close();
+    mysqli_close($db);
 ?>
