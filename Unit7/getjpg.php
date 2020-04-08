@@ -13,4 +13,5 @@ CO551 Open Source Systems -->
   $jpg = $row["Image"];
 
   echo $jpg;
+  mysqli_close($db);
 ?>

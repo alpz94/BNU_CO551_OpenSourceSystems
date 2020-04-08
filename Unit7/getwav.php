@@ -13,4 +13,5 @@ CO551 Open Source Systems -->
   $audio = $row["Audio"];
 
   echo $audio;
+  mysqli_close($db);
 ?>

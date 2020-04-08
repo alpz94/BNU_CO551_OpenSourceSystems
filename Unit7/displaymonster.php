@@ -8,7 +8,7 @@ CO551 Open Source Systems -->
     $result = mysqli_query($db, $sql);
     $row = mysqli_fetch_array($result);
 
-    echo "<img src='getjpg.php?id=" . $row["id"]. "'/>";
-
+    echo "<img src='getjpg.php?id=" . $row["id"] . "' width='100' height='100'/>";
+    
     mysqli_close($db);
 ?>
